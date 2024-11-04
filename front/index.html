@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО «Протех»</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>ООО «Протех»</h1>
+        <p>690001, г. Владивосток, ул. Пионерская, д.1, офис 410</p>
+        <p>г. Хабаровск, ул. Жданова 16, оф. 6</p>
+    </header>
+
+    <main>
+        <h2>Наши Продукты</h2>
+        <div id="product-grid" class="product-grid"></div>
+        <button id="support-btn">Обратиться в поддержку</button>
+        <div id="support-form-container" style="display: none;">
+            <form id="support-form">
+                <h2>Отправить запрос в поддержку</h2>
+                <input type="text" id="support-name" placeholder="Ваше имя" required>
+                <input type="email" id="support-email" placeholder="Ваш email" required>
+                <textarea id="support-message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Контакты:</p>
+        <p>+7 984 284 97 11</p>
+        <p>Email: kovevg@protechdv.ru</p>
+        <p>ИНН 2536339825</p>
+    </footer>
+
+    <script src="product.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProducts();
+        });
+    </script>
+</body>
+</html>
+
